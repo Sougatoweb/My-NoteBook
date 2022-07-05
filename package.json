@@ -13,7 +13,10 @@
   "devDependencies": {
     "typescript": "3.3.3"
   },
+  "homepage": "https://myusername.github.io/My-NoteBook",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
